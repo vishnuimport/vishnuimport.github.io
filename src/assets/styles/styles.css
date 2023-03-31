@@ -437,17 +437,17 @@ footer section {
         font-size: 20px;
     }
 
-    .upper {
+    .quem_somos {
         padding: 20px;
     }
 
-    .upper .title {
+    .quem_somos  .title {
         font-size: 25px;
         margin: auto;
 
     }
 
-    .upper .text {
+    .quem_somos  .text {
         padding-bottom: 40px;
     }
 
