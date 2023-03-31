@@ -1,0 +1,582 @@
+html {
+    background-color: rgb(240, 246, 255);
+}
+
+html,
+body,
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.0;
+    font-size: 20px;
+    max-width: 2600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow-x: hidden !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    color: black;
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 5px 5px rgb(133, 133, 133), -2px 5px 8px rgb(133, 133, 133);
+
+}
+
+.divider {
+    /*Divisor/linhas do lado do texto*/
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 60px;
+    margin-right: 60px;
+    --text-divider-gap: 1rem;
+    /* set a customizable gap between label and lines */
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    height: 1px;
+    background-color: rgb(41, 62, 131);
+    flex-grow: 1;
+}
+
+.divider::before {
+    margin-right: var(--text-divider-gap);
+}
+
+.divider::after {
+    margin-left: var(--text-divider-gap);
+}
+
+
+.logo .responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 300px;
+}
+
+/* background com imagem*/
+
+.background {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/porto.jpg");
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+/*
+.background {
+    margin-top: 55px;
+    padding: 10px 0px 10px 0px;
+    background-color: #081c7c;
+
+}
+*/
+/*.introducao {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+*/
+
+.introducao{
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+    
+    
+}
+.introducao h1{
+    font-size: 40px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    font-weight: 200;
+
+}
+
+
+
+
+.quem_somos,
+.lower {
+    padding: 0px 60px 0px 60px;
+}
+
+
+nav {
+    margin: auto;
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+}
+
+
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: gray;
+}
+
+.current {
+    color: #081c7c;
+    font-weight: bold;
+}
+
+
+
+.quem_somos {
+    color: #081c7c;
+    display: flex;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: rgb(248, 248, 255);
+    /*rgb(229, 243, 253)*/
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.quem_somos section {
+    flex-grow: 1;
+}
+
+.saiba_mais {
+    text-decoration: none;
+    color: white;
+    background-color: #081c7c;
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.saiba_mais:hover {
+    background-color: rgb(12, 120, 209);
+}
+
+.big {
+    display: flex;
+    
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.text {
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    word-break: break-word;
+}
+
+.atuacao {
+    margin: 20px;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.atuacao section {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.atuacao section section {
+    flex-direction: column;
+
+}
+
+.atuacao figure,
+.atuacao p {
+    margin: 10px;
+}
+
+.atuacao figure{
+    display: flex;
+    align-items: center;
+}
+
+.atuacao figure img {
+    box-shadow: 2px 2px 2px rgb(133, 133, 133);
+    border-radius: 5px;
+    margin: auto;
+}
+
+.atuacao .text {
+    color: #666666;
+}
+
+.atuacao .title {
+    font-size: 25px;
+}
+
+.lower h2.title {
+    margin:20px;
+    color: #081c7c;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+footer {
+    background-color: #081c7c;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden !important;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.0;
+    font-size: 20px;
+    max-width: 2600px;
+    height: 150px;
+    line-height: 1.0;
+
+    overflow-y: hidden !important;
+
+    bottom: 0;
+}
+
+footer section {
+    flex: 50%;
+}
+
+.info {
+    margin: auto;
+    border-left: 2px solid orange;
+    padding-left: 65px;
+
+
+
+    text-align: left;
+    width: 50%;
+
+}
+
+.principal {
+    color: orange;
+    font-size: 15px;
+
+}
+
+.secundario {
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: bold;
+    margin: 9.96px 0px 9.96px 0;
+}
+
+.logo_footer {
+    margin: auto;
+    margin-left: 0%;
+    margin-right: 0;
+    padding-right: 65px;
+
+
+
+}
+
+.logo_footer .responsive {
+
+    min-width: 300px;
+
+    margin-left: auto;
+    height: auto;
+    text-align: center;
+    width: 35%;
+    padding-right: 37px;
+}
+
+/* Pagina produtos */
+
+
+
+.background_produtos {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    padding: 10px 0px 10px 0px;
+    background-color: #081c7c;
+
+}
+
+.background_produtos .divider::after,
+.background_produtos .divider::before {
+    background-color: white;
+}
+
+.background_produtos .title {
+    color: white;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.produtos section .title {
+    color: #081c7c;
+    font-size: 35px;
+}
+
+.produtos li {
+    text-align: left;
+}
+
+.categorias {
+    text-align: center;
+    margin: auto;
+}
+
+.lista {
+    text-align: left;
+}
+
+.alimenticio {
+    margin-bottom: 60px;
+}
+
+.topico {
+    font-size: 22px;
+    color: #58585a;
+    font-weight: bolder;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.topico::after,
+.topico::before {
+    background-color: #58585a;
+}
+
+
+/*Responsividade*/
+
+@media (max-width: 910px) {
+
+    .menu {
+        margin: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .background {
+        margin-top: 10px;
+    }
+
+    .introducao p {
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .upper {
+        padding: 20px;
+    }
+
+    .upper .title {
+        font-size: 25px;
+        margin: auto;
+
+    }
+
+    .upper .text {
+        padding-bottom: 40px;
+    }
+
+    .saiba_mais {
+        font-size: 16px;
+    }
+
+    .lower {
+        padding: 20px;
+    }
+
+    .big {
+        flex-wrap: wrap;
+    }
+
+    .lower header {
+        padding: 10px;
+
+    }
+
+    .atuacao .left {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .atuacao .right {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        height: 230px;
+
+    }
+
+    .logo_footer {
+        padding: 0;
+
+    }
+
+    .logo_footer .responsive {
+        margin: auto;
+        min-width: 100px;
+        width: 200px;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .info {
+        border: none;
+        border-top: 2px solid orange;
+        padding: 20px 0px 20px 0px;
+
+    }
+
+    .info .principal,
+    .info .secundario {
+        margin-left: auto;
+    }
+
+    .produtos h1.title {
+        font-size: 35px;
+    }
+
+    .produtos h2.title {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .produtos h3.topico {
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .produtos li {
+        font-size: 16px;
+    }
+
+
+
+}
+
+@media (max-width: 650px) {
+    /*body {
+        margin: 0 5% 0 5%;
+    }
+    */
+    
+}
+
+@media (max-width: 450px) {
+    body {
+        margin: 0;
+    }
+
+    .logo_footer .responsive {
+        margin: auto;
+        min-width: 100px;
+        width: 160px;
+
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .atuacao img{
+        width: 300px;
+        height: auto;
+    }
+
+    .produtos h1.title {
+        font-size: 30px;
+    }
+
+    .produtos h2.title {
+        font-size: 22px;
+        margin: 20px;
+    }
+
+    .produtos h3.topico {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+    .produtos li {
+        font-size: 14px;
+    }
+
+}
